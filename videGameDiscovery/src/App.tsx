@@ -2,7 +2,6 @@ import { Button, ButtonGroup, Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 
 function App() {
-  // 2. Wrap ChakraProvider at the root of your app
   return (
     <Grid
       templateAreas={{
@@ -14,13 +13,9 @@ function App() {
         <NavBar></NavBar>
       </GridItem>
       <Show>
-        <GridItem area="aside" bg="blue">
-          Aside
-        </GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
-      <GridItem area="main" bg="dodgerblue">
-        Main
-      </GridItem>
+      <GridItem area="main">Main</GridItem>
     </Grid>
   );
 }
