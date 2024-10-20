@@ -13,7 +13,9 @@ export interface Game {
     name: string;
     background_image:string // bien avoir le meme nom que le parametre dans la requete hehe
     parent_platforms: {platform: Platform}[];
-    metacritic:number
+    metacritic:number; 
+    rating_top:number;
+    rating:number;
   }
   
 const useGames = (gameQuery: GameQuery) => 
